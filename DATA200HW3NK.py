@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import streamlit as st
 import pandas as pd
-data = pd.read_csv(r"C:\Users\Karthik\Downloads\toy_dataset.csv")
+data = pd.read_csv(r"C:\Users\Karthik\Desktop\SEM 1\DATA 200\ASsignments\toy_dataset.csv")
 df = pd.DataFrame(data)
 x=list(df.iloc[:, 1])
 y=list(df.iloc[:, 4])
