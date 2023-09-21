@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import streamlit as st
 import pandas as pd
 data = pd.read_csv(r"C:\Users\Karthik\Downloads\toy_dataset.csv")
 df = pd.DataFrame(data)
@@ -9,4 +10,5 @@ plt.xticks(rotation=45, ha='right')
 plt.title("SALARY BASED ON LOCATION")
 plt.xlabel("CITY")
 plt.ylabel("INCOME")
-plt.show()
+fig=plt.show()
+st.plotly_chart(fig)
