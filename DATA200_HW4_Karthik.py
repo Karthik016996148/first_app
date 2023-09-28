@@ -1,5 +1,5 @@
 import streamlit as st
-import matplotlib.pyplot as plt
+import plotly.express as plt
 import pandas as pd
 data = pd.read_csv("toy_dataset.csv")
 df = pd.DataFrame(data)
