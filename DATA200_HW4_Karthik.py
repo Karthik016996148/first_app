@@ -1,5 +1,5 @@
 import streamlit as st
-import plotly.express as plt
+import matplotlib.pyplot as plt
 import pandas as pd
 data = pd.read_csv("toy_dataset.csv")
 df = pd.DataFrame(data)
@@ -12,4 +12,4 @@ plt.xticks(rotation=45, ha='right')
 plt.title("SALARY BASED ON LOCATION")
 plt.xlabel("CITY")
 plt.ylabel("INCOME")
-st.pyplot(plt.gcf())
+st.pyplot(plt.gcf()) 
